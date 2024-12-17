@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VMRefresh</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f8f8f8;
+        background-image: url(./Asset/img/image.png);
+
+      }
+      header {
+        background-color: goldenrod;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: #555;
+        padding: 0.5rem;     
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        margin: 0 0.5rem;
+        transition: background-color 0.3s;
+        border: 1px solid ;
+        border-radius: 20px;
+        
+      }
+      nav a:hover {
+        background-color: #777;
+      }
+      .container {
+        width: 90%;
+        margin: 2rem auto;
+        text-align: center;
+      }
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+      }
+      .product-item {
+        background-color: #fff;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        transition: transform 0.3s;
+      }
+      .product-item:hover {
+        transform: scale(1.05);
+      }
+      footer {
+        background-color: goldenrod;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Chào Mừng Đến Cửa hàng chúng tôi</h1>
+      <p>Khám phá những thức uống ngon nhất !</p>
+    </header>
+
+    <nav>
+        <a href="home.html">Trang Chủ</a>
+        <a href="water.html">Sản Phẩm</a>
+        <a href="login.html">Đăng nhập</a>
+        <a href="infor.html">Liên Hệ</a>
+      </nav>
+    <nav>
+        <a href="water.html">Nước uống</a>
+        <a href="beer.html">Bia</a>
+    </nav>
+
+    <div class="container" id="products">
+      <h2>Sản Phẩm Của Chúng Tôi</h2>
+      <div class="product-grid">
+        <!-- Thêm các sản phẩm và hình ảnh tại đây -->
+        <div class="product-item">
+          <h3>Bia 333</h3>
+          <img src="./Asset/img/bia333.jpg" alt="" style="width: 100%" />
+          <p>238.000 đồng</p>
+        </div>
+        <div class="product-item">
+          <h3>Bia Hà Nội</h3>
+          <img src="./Asset/img/biahanoi.jpg" alt="" style="width: 100%" />
+          <p>339.000 đồng</p>
+        </div>
+        <div class="product-item">
+          <h3>Bia Heineken</h3>
+          <img src="./Asset/img/biaheineken.jpg" alt="" style="width: 100%" />
+          <p>460.000 đồng</p>
+        </div>
+        <div class="product-item">
+          <h3>Bia Larue</h3>
+          <img src="./Asset/img/bialarue.jpg" alt="" style="width: 100%" />
+          <p>259.000 đồng</p>
+        </div>
+        <div class="product-item">
+          <h3>Bia Sài Gòn</h3>
+          <img src="./Asset/img/biasaigon.jpg" alt="" style="width: 100%" />
+          <p>290.000 đồng</p>
+        </div>
+        <div class="product-item">
+          <h3>Bia Tiger</h3>
+          <img src="./Asset/img/biatigetr.jpg" alt="" style="width: 100%" />
+          <p>350.000 đồng</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; VMRefresh | Liên hệ: VMRefresh@email.com</p>
+    </footer>
+    <audio autoplay loop>
+        <source src="./Asset/img/hưng-hack--nhạc-remix-tết-tik-tok-2022.mp3" type="audio/mp3">
+    </audio>
+  </body>
+</html>
